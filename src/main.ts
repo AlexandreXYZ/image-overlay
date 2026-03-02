@@ -1,6 +1,6 @@
 const img = document.createElement("img");
 
-img.src = "/a.jpg";
+img.src = "/1535482287.svg";
 img.style.objectFit = "contain";
 img.style.width = "100%";
 img.style.height = "100%";
