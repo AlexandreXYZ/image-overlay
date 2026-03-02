@@ -1,0 +1,25 @@
+{
+	"name": "image-overlay",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"main": "dist-electron/main.js",
+	"scripts": {
+		"dev": "concurrently \"vite\" \"tsc --project tsconfig.json --watch\" \"wait-on http://localhost:5173 && cross-env NODE_ENV=development electron .\"",
+		"build": "vite build",
+		"preview": "vite preview",
+		"build:electron": "tsc --project tsconfig.json"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.3",
+		"concurrently": "^9.2.1",
+		"cross-env": "^10.1.0",
+		"electron": "^40.6.1",
+		"typescript": "^5.9.3",
+		"vite": "^8.0.0-beta.13",
+		"wait-on": "^9.0.4"
+	},
+	"overrides": {
+		"vite": "^8.0.0-beta.13"
+	}
+}
